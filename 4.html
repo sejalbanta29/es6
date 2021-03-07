@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user =  { firstName: 'Sejal', 
+                       lastName: 'Banta',
+                       Address: { Line1: 'palampur', 
+                                  Line2: 'address line 2', 
+                                  State: 'Himachal Pradesh', 
+                                  Pin: 176061, 
+                                  Country: 'India', 
+                                  City: 'kangra' }, 
+                         phoneNo: 1234567890 };
+
+//destructuring the object
+const {firstName,lastName,Address:{Line1,Line2,State,Pin,Country,City},phoneNo} = user;
+
+console.log(Line1);
+console.log(Line2);
+console.log(State);
+console.log(Pin);
+console.log(Country);
+console.log(City);
+
+
+    </script>
+</body>
+</html>
